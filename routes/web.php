@@ -1,12 +1,14 @@
 <?php
 
+use App\Http\Controllers\ComentarioController;
 use App\Http\Controllers\ImagenController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\logoutController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RegisterController;
+use App\Models\Comentario;
 use Illuminate\Support\Facades\Route;
-use PhpParser\Node\Expr\PostDec;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -22,16 +24,22 @@ use PhpParser\Node\Expr\PostDec;
 Route::get('/', function () {
     return view('principal');
 });
-
+//Rutas para el login
 Route::get('/register', [RegisterController::class,'index'])->name('register');
 Route::post('/register', [RegisterController::class,'store']);
 
-route::get('/login',[LoginController::class,'index'])->name('login');
-route::post('/login',[LoginController::class,'store']);
-route::post('/logout',[logoutController::class,'store'])->name('logout');
+//Rutas para el login
+Route::get('/login',[LoginController::class,'index'])->name('login');
+Route::post('/login',[LoginController::class,'store']);
+Route::post('/logout',[logoutController::class,'store'])->name('logout');
 
-route::get('/{user:username}', [PostController::class,'index'])->name('post.index');
-route::get('/posts/create', [PostController::class,'create'])->name('posts.create');
-route::post('/posts',[PostController::class,'store'])->name('posts.store');
+//Rutas para el crud de los posts
+Route::get('/{user:username}', [PostController::class,'index'])->name('post.index');
+Route::get('/posts/create', [PostController::class,'create'])->name('posts.create');
+Route::post('/posts',[PostController::class,'store'])->name('posts.store');
+Route::get('/{user:username}/posts/{post}',[PostController::class,'show'])->name('posts.show');
 
-route::post('/imagenes',[ImagenController::class,'store'])->name('imagenes.store');
+Route::post('/{user:username}/posts/{post}',[ComentarioController::class,'store'])->name('comentario.store');
+
+Route::post('/imagenes',[ImagenController::class,'store'])->name('imagenes.store');
+
