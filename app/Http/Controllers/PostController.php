@@ -75,11 +75,11 @@ class PostController extends Controller
     {
       $this->authorize('delete',$post);
       $post->delete();
-      
+
       //Eliminar la imagen
       $image_path = public_path('uploads/'.$post->imagen);
 
-      if(File::exists($image_path)){
+        if(File::exists($image_path)){
         unlink($image_path);
       }
 
