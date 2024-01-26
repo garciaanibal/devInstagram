@@ -36,22 +36,7 @@ class PostController extends Controller
             'descripcion'=>'required',
             'imagen'=> 'required'
         ]);
-        // dd('creando el posts');
 
-        // Post::create([
-        //     'titulo'=>$request->titulo,
-        //     'descripcion'=>$request->descripcion,
-        //     'imagen'=>$request->imagen,
-        //     'user_id'=>auth()->user()->id
-        // ]);
-
-        // Otra forma de guardar registro
-        // $post= new Post();
-        // $post->titulo = $request->titulo;
-        // $post->descripcion = $request->descripcion;
-        // $post->imagen = $request->imagen;
-        // $post->user_id = $request->aut()->user()->id;
-        // $post->save();
 
         $request->user()->posts()->create([
             'titulo'=>$request->titulo,
@@ -60,7 +45,7 @@ class PostController extends Controller
             'user_id'=>auth()->user()->id
         ]);
 
-        return redirect()->route('post.index', auth()->user()->username);
+        return redirect()->route('posts.index', auth()->user()->username);
     }
 
     public function show(User $user,Post $post)
@@ -83,7 +68,7 @@ class PostController extends Controller
         unlink($image_path);
       }
 
-      return redirect()->route('post.index', auth()->user()->username);
+      return redirect()->route('posts.index', auth()->user()->username);
 
     }
 }

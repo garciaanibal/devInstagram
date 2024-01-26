@@ -8,9 +8,45 @@
     <div class="container mx-auto md:flex">
         <div class="w-1/2">
             <img src="{{asset('uploads').'/'.$post->imagen}}" alt="Imagen del post {{$post->titulo}}">
+            <div class="flex items-center gap-4 p-3">
+                @auth
+                    @if($post->checkLike(auth()->user()) )
+                        <form method="POST" action="{{ route('posts.like.destroy',$post) }}">
+                            @method('DELETE')
+                            @csrf
+                            <div class="my-4">
+                                <button type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="red" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597
+                                        1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1
+                                        3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    @else
+                        <form method="POST" action="{{ route('posts.like.store',$post) }}">
+                            @csrf
+                            <div class="my-4">
+                                <button type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        fill="white" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597
+                                        1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1
+                                        3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    @endif
 
-            <div class="p-3">
-                <p>0 likes</p>
+                @endauth
+            <p>{{ $post->likes->count() }} likes</p>
             </div>
 
             <div>
@@ -79,7 +115,7 @@
                         @foreach ($post->comentarios as $coment )
 
                             <div class="p-5 border-b border-gray-300">
-                                <a href="{{route('post.index',$coment->user->username)}}" class="font-bold">
+                                <a href="{{route('posts.index',$coment->user->username)}}" class="font-bold">
                                     {{$coment->user->username}}
                                 </a>
                                 <p>{{$coment->coment}}</p>

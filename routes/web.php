@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ComentarioController;
 use App\Http\Controllers\ImagenController;
+use App\Http\Controllers\LikeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\logoutController;
 use App\Http\Controllers\PostController;
@@ -21,8 +22,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('principal');
+    return view('home');
 });
+// Route::get('/', HomeController::class)->name('home');
+
 //Rutas para el login
 Route::get('/register', [RegisterController::class,'index'])->name('register');
 Route::post('/register', [RegisterController::class,'store']);
@@ -33,7 +36,7 @@ Route::post('/login',[LoginController::class,'store']);
 Route::post('/logout',[logoutController::class,'store'])->name('logout');
 
 //Rutas para el crud de los posts
-Route::get('/{user:username}', [PostController::class,'index'])->name('post.index');
+Route::get('/{user:username}', [PostController::class, 'index'])->name('posts.index');
 Route::get('/posts/create', [PostController::class,'create'])->name('posts.create');
 Route::post('/posts',[PostController::class,'store'])->name('posts.store');
 Route::get('/{user:username}/posts/{post}',[PostController::class,'show'])->name('posts.show');
@@ -41,4 +44,10 @@ Route::delete('/posts/{post}', [PostController::class,'destroy'])->name('posts.d
 
 Route::post('/{user:username}/posts/{post}',[ComentarioController::class,'store'])->name('comentario.store');
 Route::post('/imagenes',[ImagenController::class,'store'])->name('imagenes.store');
+
+//like a las fotos
+Route::post('/posts/{post}/likes',[LikeController::class,'store'])->name('posts.like.store');
+Route::delete('/posts/{post}/likes',[LikeController::class,'destroy'])->name('posts.like.destroy');
+
+
 
