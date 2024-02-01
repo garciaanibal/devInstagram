@@ -12,6 +12,7 @@ Es un poryecto realizado en laravel 9, el poroyecto se trata de una red social, 
 - **Dropzone.**
 - **Middleware**
   
+The background color is `#ffffff` for light mode and `#000000` for dark mode.
 
 ### Premium Partners
 
