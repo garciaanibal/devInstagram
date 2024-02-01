@@ -12,7 +12,7 @@ Es un poryecto realizado en laravel 9, el poroyecto se trata de una red social, 
 - **Dropzone.**
 - **Middleware**  
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.][https://myoctocat.com/assets/images/base-octocat.svg](https://media.istockphoto.com/id/1158317995/es/vector/lindo-jack-russell-terrier-patas-sobre-la-pared-perro-cara-dibujos-animados-ilustraci%C3%B3n.jpg?s=2048x2048&w=is&k=20&c=2WcolMJRC_6UNjZQ7iDYeoR1UWGy2QzToklG31HUqaA=)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://media.istockphoto.com/id/1158317995/es/vector/lindo-jack-russell-terrier-patas-sobre-la-pared-perro-cara-dibujos-animados-ilustraci%C3%B3n.jpg?s=2048x2048&w=is&k=20&c=2WcolMJRC_6UNjZQ7iDYeoR1UWGy2QzToklG31HUqaA=)
 
 ### Premium Partners
 
