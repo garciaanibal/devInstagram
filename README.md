@@ -3,13 +3,13 @@
 ## About in the proyect
 Es un poryecto realizado en laravel 9, el poroyecto se trata de una red social, similar a Instagram pero con lo mas basico, donde podras registrarte, realizar abm de post, podras darle like a los post, podras seguir y ser seguido por personas, podras editar tu perfil y un par de cositas mas 
 
-## Learning Laravel
+## Temas que se tocan en este proyecto
+#Controller.
+#Model
+#Migrations
+#Factory
+#Sedeers
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
 ### Premium Partners
 
