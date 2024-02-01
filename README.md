@@ -5,10 +5,10 @@ Es un poryecto realizado en laravel 9, el poroyecto se trata de una red social, 
 
 ## Temas que se tocan en este proyecto
  -**Controller.**
--**Model.**
--**Migration.**
--**Factory.**
--**Seeders.**
+- **Model.**
+- **Migration.**
+- **Factory.**
+- **Seeders.**
 - **Vehikl**
 
 
