@@ -10,7 +10,8 @@ Es un poryecto realizado en laravel 9, el poroyecto se trata de una red social, 
 - **Factory.**
 - **Seeders.**
 - **Dropzone.**
-- middleware
+- **Middleware**
+  
 
 ### Premium Partners
 
