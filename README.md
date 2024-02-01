@@ -4,11 +4,11 @@
 Es un poryecto realizado en laravel 9, el poroyecto se trata de una red social, similar a Instagram pero con lo mas basico, donde podras registrarte, realizar abm de post, podras darle like a los post, podras seguir y ser seguido por personas, podras editar tu perfil y un par de cositas mas 
 
 ## Temas que se tocan en este proyecto
- `#ffffff` **Controller.**
-**Model.**
-**Migration.**
-**Factory.**
-**Seeders.**
+ -**Controller.**
+-**Model.**
+-**Migration.**
+-**Factory.**
+-**Seeders.**
 - **Vehikl**
 
 
