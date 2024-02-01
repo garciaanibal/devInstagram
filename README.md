@@ -10,9 +10,9 @@ Es un poryecto realizado en laravel 9, el poroyecto se trata de una red social, 
 - **Factory.**
 - **Seeders.**
 - **Dropzone.**
-- **Middleware**
-  
-The background color is `#ffffff` for light mode and `#000000` for dark mode.
+- **Middleware**  
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
 
 ### Premium Partners
 
