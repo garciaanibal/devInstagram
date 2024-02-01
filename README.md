@@ -9,7 +9,7 @@ Es un poryecto realizado en laravel 9, el poroyecto se trata de una red social, 
 **Migration.**
 **Factory.**
 **Seeders.**
-- **[Vehikl]**
+- **Vehikl**
 
 
 ### Premium Partners
