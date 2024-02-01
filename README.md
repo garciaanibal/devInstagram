@@ -1,5 +1,5 @@
 
-https://media.istockphoto.com/id/1137372279/es/vector/cara-de-schnautzer-vistiendo-gafas-de-sol-ilustraci%C3%B3n-vectorial-aislada.jpg?s=2048x2048&w=is&k=20&c=cmpfH_nNiqc1RxMNzqd-BVb3ExxXFmORcVlWVFPg5Qw=
+(https://media.istockphoto.com/id/1137372279/es/vector/cara-de-schnautzer-vistiendo-gafas-de-sol-ilustraci%C3%B3n-vectorial-aislada.jpg?s=2048x2048&w=is&k=20&c=cmpfH_nNiqc1RxMNzqd-BVb3ExxXFmORcVlWVFPg5Qw=)
 ## About in the proyect
 Es un poryecto realizado en laravel 9, el poroyecto se trata de una red social, similar a Instagram pero con lo mas basico, donde podras registrarte, realizar abm de post, podras darle like a los post, podras seguir y ser seguido por personas, podras editar tu perfil y un par de cositas mas 
 
