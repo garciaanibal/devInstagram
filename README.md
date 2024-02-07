@@ -17,6 +17,5 @@ El poroyecto se trata de una red social similar a Instagram pero con lo mas basi
 **Laravel 9**
 - **[Vehikl](https://vehikl.com/)**
 
+(https://www.pinterest.es/pin/242209286187817772/)
 
-
-<span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png</span><span>)</span>
