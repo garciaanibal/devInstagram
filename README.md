@@ -17,5 +17,5 @@ El poroyecto se trata de una red social similar a Instagram pero con lo mas basi
 **Laravel 9**
 - **[Vehikl](https://vehikl.com/)**
 
-([https://myoctocat.com/assets/images/base-octocat.svg](https://www.freepik.es/vector-gratis/fondo-espacio-trabajo-diseno-grafico-estilo-hecho-mano_2041771.htm#query=computadora%20dibujo&position=2&from_view=keyword&track=ais&uuid=8c57ebad-ad05-4ee7-b11c-b21768574023)https://www.freepik.es/vector-gratis/fondo-espacio-trabajo-diseno-grafico-estilo-hecho-mano_2041771.htm#query=computadora%20dibujo&position=2&from_view=keyword&track=ais&uuid=8c57ebad-ad05-4ee7-b11c-b21768574023)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.]([https://myoctocat.com/assets/images/base-octocat.svg](https://www.freepik.es/vector-gratis/fondo-espacio-trabajo-diseno-grafico-estilo-hecho-mano_2041771.htm#query=computadora%20dibujo&position=2&from_view=keyword&track=ais&uuid=8c57ebad-ad05-4ee7-b11c-b21768574023)https://www.freepik.es/vector-gratis/fondo-espacio-trabajo-diseno-grafico-estilo-hecho-mano_2041771.htm#query=computadora%20dibujo&position=2&from_view=keyword&track=ais&uuid=8c57ebad-ad05-4ee7-b11c-b21768574023)
 
