@@ -10,9 +10,10 @@
 <body class="bg-gray-100">
     <header class="p-5 bg-white border-b shadow">
        <div class="container flex items-center justify-between mx-auto">
-        <h1 class="text-3xl font-black">
+        <a href="{{ route('home') }}" class="text-3xl font-black">
+
             DevInstagram
-        </h1>
+        </a>
 
         @auth
         <nav class="flex items-center gap-2">
